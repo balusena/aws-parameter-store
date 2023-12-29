@@ -1,2 +1,2 @@
 # aws-parameter-store
-This repos stores project aws parameters
+This repository stores project aws parameters
