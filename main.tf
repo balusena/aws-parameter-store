@@ -22,7 +22,7 @@ variable "params" {
     { name = "roboshop.dev.payment.user_host", value = "user-dev.robobal.store", type = "String"},
     { name = "roboshop.dev.payment.user_port", value = "8080", type = "String"},
     { name = "roboshop.dev.payment.amqp_host", value = "rabbitmq-dev.robobal.store", type = "String"},
-    { name = "roboshop.dev.payment.amqp_user", value = "roshop", type = "String"},
+    { name = "roboshop.dev.payment.amqp_user", value = "roboshop", type = "String"},
     { name = "roboshop.dev.shipping.cart_endpoint", value = "cart-dev.robobal.store:8080", type = "String"},
     { name = "roboshop.dev.shipping.db_host", value = "mysql-dev.robobal.store", type = "String"},
     { name = "roboshop.dev.user.mongo", value = "true", type = "String"},
@@ -32,7 +32,7 @@ variable "params" {
 
     ### Passwords will never be stored in git repos, usually in organizations we create them manually whom ever have access will provision them
     ### these secrets in aws parameter store.
-    { name = "roboshop.dev.payment.amqp_pass", value = "true", type = "SecureString"}
+    { name = "roboshop.dev.payment.amqp_pass", value = "true", type = "SecureString"},
 
 
   ]
