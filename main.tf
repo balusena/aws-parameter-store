@@ -14,7 +14,7 @@ variable "params" {
     { name = "roboshop.dev.frontend.shipping_url", value = "http://shipping-dev.robobal.store:8080/", type = "String" },
     { name = "roboshop.dev.cart.redis_host", value = "redis-dev.robobal.store", type = "String"},
     { name = "roboshop.dev.cart.catalogue_host", value = "catalogue-dev.robobal.store", type = "String"},
-    { name = "roboshop.dev.cart.catalogue_host", value = "8080", type = "String"},
+    { name = "roboshop.dev.cart.catalogue_port", value = "8080", type = "String"},
     { name = "roboshop.dev.catalogue.mongo", value = "true", type = "String"},
     { name = "roboshop.dev.catalogue.mongo_url", value = "mongodb://mongodb-dev.robobal.store:27017/catalogue", type = "String"},
     { name = "roboshop.dev.payment.cart_host", value = "cart-dev.robobal.store", type = "String"},
