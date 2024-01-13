@@ -1,8 +1,9 @@
 resource "aws_ssm_parameter" "params" {
-  count = length(var.params)
-  name  = var.params[count.index].name
-  type  = var.params[count.index].type
-  value = var.params[count.index].value
+  count  = length(var.params)
+  name   = var.params[count.index].name
+  type   = var.params[count.index].type
+  value  = var.params[count.index].value
+  key_id = "62bb771a-341f-4c82-b8d9-473959a4a166"
 }
 
 variable "params" {
@@ -28,13 +29,15 @@ variable "params" {
     { name = "roboshop.dev.user.mongo", value = "true", type = "String"},
     { name = "roboshop.dev.user.redis_host", value = "redis-dev.robobal.store", type = "String"},
     { name = "roboshop.dev.user.mongo_url", value = "mongodb://mongodb-dev.robobal.store:27017/users", type = "String"},
+    { name = "roboshop.dev.rabbitmq.amqp_user", value = "roboshop", type = "String"},
+    { name = "roboshop.dev.mysql.username", value = "roboshop", type = "String"},
 
 
     ### Passwords will never be stored in git repos, usually in organizations we create them manually whom ever have access will provision them
     ### these secrets in aws parameter store.
     { name = "roboshop.dev.payment.amqp_pass", value = "roboshop123", type = "SecureString"},
-    { name = "roboshop.dev.rabbitmq.amqp_user", value = "roboshop", type = "String"},
     { name = "roboshop.dev.rabbitmq.amqp_pass", value = "roboshop123", type = "SecureString"},
+    { name = "roboshop.dev.mysql.password", value = "roboshop123", type = "SecureString"},
 
   ]
 }
