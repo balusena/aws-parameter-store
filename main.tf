@@ -33,7 +33,8 @@ variable "params" {
     ### Passwords will never be stored in git repos, usually in organizations we create them manually whom ever have access will provision them
     ### these secrets in aws parameter store.
     { name = "roboshop.dev.payment.amqp_pass", value = "roboshop123", type = "SecureString"},
-
+    { name = "roboshop.dev.rabbitmq.amqp_user", value = "roboshop", type = "String"},
+    { name = "roboshop.dev.rabbitmq.amqp_pass", value = "roboshop123", type = "SecureString"},
 
   ]
 }
