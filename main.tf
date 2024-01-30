@@ -118,5 +118,10 @@ variable "params" {
       value = "mongodb://roboshop:roboshop123@docdb-prod.cluster-cfo8mcqcknol.us-east-1.docdb.amazonaws.com:27017/users?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false",
       type = "SecureString" },
     { name = "roboshop.prod.user.docdb_endpoint", value = "docdb-prod.cluster-cfo8mcqcknol.us-east-1.docdb.amazonaws.com", type = "String" },
+
+
+    # Nexus Credentials
+    { name = "roboshop.nexus.username", value = "admin", type = "SecureString" },
+    { name = "roboshop.nexus.password", value = "admin123", type = "SecureString" },
   ]
 }
