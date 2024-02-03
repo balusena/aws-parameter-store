@@ -127,3 +127,4 @@ variable "params" {
     { name = "roboshop.nexus.password", value = "admin123", type = "SecureString" },
   ]
 }
+
