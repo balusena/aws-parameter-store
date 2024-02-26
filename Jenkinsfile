@@ -2,4 +2,4 @@
 
 env.component = "aws-parameter-init-container"
 
-mainci()
+docker()
