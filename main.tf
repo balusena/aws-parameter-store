@@ -86,7 +86,7 @@ variable "params" {
     { name = "roboshop.prod.payment.amqp_host", value = "rabbitmq-prod.robobal.store", type = "String"},
     { name = "roboshop.prod.payment.amqp_user", value = "roboshop", type = "String"},
 
-    { name = "roboshop.prod.shipping.cart_endpoint", value = "cart-prod.robobal.store:80", type = "String"},
+    { name = "roboshop.prod.shipping.cart_endpoint", value = "cart:8080", type = "String"},
     { name = "roboshop.prod.shipping.db_host", value = "rds-prod.cluster-cfo8mcqcknol.us-east-1.rds.amazonaws.com", type = "String"},
 
     { name = "roboshop.prod.user.mongo", value = "true", type = "String"},
