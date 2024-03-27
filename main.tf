@@ -79,10 +79,10 @@ variable "params" {
 
     { name = "roboshop.prod.catalogue.mongo", value = "true", type = "String"},
 
-    { name = "roboshop.prod.payment.cart_host", value = "cart-prod.robobal.store", type = "String"},
-    { name = "roboshop.prod.payment.cart_port", value = "80", type = "String"},
-    { name = "roboshop.prod.payment.user_host", value = "user-prod.robobal.store", type = "String"},
-    { name = "roboshop.prod.payment.user_port", value = "80", type = "String"},
+    { name = "roboshop.prod.payment.cart_host", value = "cart", type = "String"},
+    { name = "roboshop.prod.payment.cart_port", value = "8080", type = "String"},
+    { name = "roboshop.prod.payment.user_host", value = "user", type = "String"},
+    { name = "roboshop.prod.payment.user_port", value = "8080", type = "String"},
     { name = "roboshop.prod.payment.amqp_host", value = "rabbitmq-prod.robobal.store", type = "String"},
     { name = "roboshop.prod.payment.amqp_user", value = "roboshop", type = "String"},
 
