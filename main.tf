@@ -74,8 +74,8 @@ variable "params" {
 
     #{ name = "roboshop.prod.cart.redis_host", value = "elasticache-prod.kbagvp.clustercfg.use1.cache.amazonaws.com", type = "String"},
     { name = "roboshop.prod.cart.redis_host", value = "elasticache-prod-instance.kbagvp.0001.use1.cache.amazonaws.com", type = "String" },
-    { name = "roboshop.prod.cart.catalogue_host", value = "catalogue-prod.robobal.store", type = "String"},
-    { name = "roboshop.prod.cart.catalogue_port", value = "80", type = "String"},
+    { name = "roboshop.prod.cart.catalogue_host", value = "catalogue", type = "String"},
+    { name = "roboshop.prod.cart.catalogue_port", value = "8080", type = "String"},
 
     { name = "roboshop.prod.catalogue.mongo", value = "true", type = "String"},
 
